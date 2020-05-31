@@ -37,7 +37,7 @@ Graph::Graph(int nodeAmount) {
 
 void Graph::addEdge(int u, int v, int weight) {
   AdjListNode node(v, weight);
-  adj[u].push_back(node);  // Add v to u's list
+  adj[u].push_back(node);
 }
 
 void Graph::dijkstraPath(int start, int finish, bool ifMin) {
